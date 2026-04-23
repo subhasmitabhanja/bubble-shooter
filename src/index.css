@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-950: #0f1724;
+  --color-slate-900: #0f172a;
+  --color-slate-800: #1e293b;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-50 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .stat-box {
+    @apply bg-slate-800/80 border border-slate-600 p-5 rounded-2xl backdrop-blur-md shadow-xl w-44;
+  }
+
+  .btn-geometric {
+    @apply bg-gradient-to-br from-blue-500 to-blue-700 text-white px-12 py-4 rounded-full 
+           text-xl font-bold uppercase tracking-widest cursor-pointer transition-all 
+           hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] border-none;
+  }
+}
